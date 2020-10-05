@@ -20,8 +20,9 @@ cotacoesForm.addEventListener('submit',(event) => {
          return;
      }   
 
-    fetch(`http://localhost:3000/cotacoes?ativo=${ativo}`).then((response) =>{
-        response.json().then((data) => {
+//    fetch(`http://localhost:3000/cotacoes?ativo=${ativo}`).then((response) =>{
+    fetch(`/cotacoes?ativo=${ativo}`).then((response) =>{
+            response.json().then((data) => {
             if(data.error){
                 mainMensage.innerText=`Alguma coisa deu errado ${error}`
             } else{
