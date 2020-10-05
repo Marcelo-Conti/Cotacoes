@@ -1,9 +1,9 @@
-#Projeto cotações
+# Projeto cotações
 
-#Para executar configure as dependências
+# Para executar configure as dependências
 npm -i
 
-#depois
+# depois
 
 npm start
 
